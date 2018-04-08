@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CC03BF659A29AFAA92D100B /* libPods-TaipeiParks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4582D031B66A2F7A8E0B1C3F /* libPods-TaipeiParks.a */; };
+		564AB626207A15E900274D3A /* taiwan-default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 564AB625207A15E900274D3A /* taiwan-default.jpg */; };
+		564AB629207A1B4800274D3A /* OtherSpotCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AB628207A1B4800274D3A /* OtherSpotCollectionViewCell.m */; };
+		56D5ECCF2075F1DD004C6575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5ECCE2075F1DD004C6575 /* main.m */; };
+		56D5ECD22075F1DD004C6575 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5ECD12075F1DD004C6575 /* AppDelegate.m */; };
+		56D5ECD52075F1DD004C6575 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5ECD42075F1DD004C6575 /* ViewController.m */; };
+		56D5ECD82075F1DD004C6575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D5ECD62075F1DD004C6575 /* Main.storyboard */; };
+		56D5ECDA2075F1DD004C6575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D5ECD92075F1DD004C6575 /* Assets.xcassets */; };
+		56D5ECDD2075F1DD004C6575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D5ECDB2075F1DD004C6575 /* LaunchScreen.storyboard */; };
+		56D5ECE6207663AE004C6575 /* SpotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5ECE5207663AE004C6575 /* SpotTableViewCell.m */; };
+		56D5ECEA20777C03004C6575 /* TaipeiParkSpots.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5ECE920777C03004C6575 /* TaipeiParkSpots.m */; };
+		56D5ECEF20786DD6004C6575 /* TaipeiParkSpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5ECEE20786DD6004C6575 /* TaipeiParkSpotViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1572FAECE87B3AB948E953FB /* Pods-TaipeiParks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiParks.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiParks/Pods-TaipeiParks.release.xcconfig"; sourceTree = "<group>"; };
+		4386C1B05D607B81EC7B75EE /* Pods-TaipeiParks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaipeiParks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaipeiParks/Pods-TaipeiParks.debug.xcconfig"; sourceTree = "<group>"; };
+		4582D031B66A2F7A8E0B1C3F /* libPods-TaipeiParks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaipeiParks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		564AB625207A15E900274D3A /* taiwan-default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "taiwan-default.jpg"; sourceTree = "<group>"; };
+		564AB628207A1B4800274D3A /* OtherSpotCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherSpotCollectionViewCell.m; sourceTree = "<group>"; };
+		564AB62A207A1C5200274D3A /* OtherSpotCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherSpotCollectionViewCell.h; sourceTree = "<group>"; };
+		56D5ECCA2075F1DD004C6575 /* TaipeiParks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaipeiParks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D5ECCE2075F1DD004C6575 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56D5ECD02075F1DD004C6575 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		56D5ECD12075F1DD004C6575 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		56D5ECD32075F1DD004C6575 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		56D5ECD42075F1DD004C6575 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		56D5ECD72075F1DD004C6575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56D5ECD92075F1DD004C6575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56D5ECDC2075F1DD004C6575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56D5ECDE2075F1DD004C6575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56D5ECE42076636B004C6575 /* SpotTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotTableViewCell.h; sourceTree = "<group>"; };
+		56D5ECE5207663AE004C6575 /* SpotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotTableViewCell.m; sourceTree = "<group>"; };
+		56D5ECE820777BF2004C6575 /* TaipeiParkSpots.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TaipeiParkSpots.h; path = Model/TaipeiParkSpots.h; sourceTree = "<group>"; };
+		56D5ECE920777C03004C6575 /* TaipeiParkSpots.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaipeiParkSpots.m; path = Model/TaipeiParkSpots.m; sourceTree = "<group>"; };
+		56D5ECED20786DC5004C6575 /* TaipeiParkSpotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaipeiParkSpotViewController.h; sourceTree = "<group>"; };
+		56D5ECEE20786DD6004C6575 /* TaipeiParkSpotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaipeiParkSpotViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56D5ECC72075F1DC004C6575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC03BF659A29AFAA92D100B /* libPods-TaipeiParks.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56D5ECC12075F1DC004C6575 = {
+			isa = PBXGroup;
+			children = (
+				56D5ECCC2075F1DD004C6575 /* TaipeiParks */,
+				56D5ECCB2075F1DD004C6575 /* Products */,
+				AC3E67278046D3C0236BFB0D /* Pods */,
+				A6697A20DB103ABD356E3F55 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		56D5ECCB2075F1DD004C6575 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56D5ECCA2075F1DD004C6575 /* TaipeiParks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56D5ECCC2075F1DD004C6575 /* TaipeiParks */ = {
+			isa = PBXGroup;
+			children = (
+				564AB625207A15E900274D3A /* taiwan-default.jpg */,
+				56D5ECE720777863004C6575 /* Model */,
+				56D5ECD02075F1DD004C6575 /* AppDelegate.h */,
+				56D5ECD12075F1DD004C6575 /* AppDelegate.m */,
+				56D5ECD32075F1DD004C6575 /* ViewController.h */,
+				56D5ECD42075F1DD004C6575 /* ViewController.m */,
+				56D5ECD62075F1DD004C6575 /* Main.storyboard */,
+				56D5ECD92075F1DD004C6575 /* Assets.xcassets */,
+				56D5ECDB2075F1DD004C6575 /* LaunchScreen.storyboard */,
+				56D5ECDE2075F1DD004C6575 /* Info.plist */,
+				56D5ECCD2075F1DD004C6575 /* Supporting Files */,
+				56D5ECE42076636B004C6575 /* SpotTableViewCell.h */,
+				56D5ECE5207663AE004C6575 /* SpotTableViewCell.m */,
+				56D5ECED20786DC5004C6575 /* TaipeiParkSpotViewController.h */,
+				56D5ECEE20786DD6004C6575 /* TaipeiParkSpotViewController.m */,
+				564AB628207A1B4800274D3A /* OtherSpotCollectionViewCell.m */,
+				564AB62A207A1C5200274D3A /* OtherSpotCollectionViewCell.h */,
+			);
+			path = TaipeiParks;
+			sourceTree = "<group>";
+		};
+		56D5ECCD2075F1DD004C6575 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56D5ECCE2075F1DD004C6575 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56D5ECE720777863004C6575 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56D5ECE820777BF2004C6575 /* TaipeiParkSpots.h */,
+				56D5ECE920777C03004C6575 /* TaipeiParkSpots.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A6697A20DB103ABD356E3F55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4582D031B66A2F7A8E0B1C3F /* libPods-TaipeiParks.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC3E67278046D3C0236BFB0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4386C1B05D607B81EC7B75EE /* Pods-TaipeiParks.debug.xcconfig */,
+				1572FAECE87B3AB948E953FB /* Pods-TaipeiParks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56D5ECC92075F1DC004C6575 /* TaipeiParks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D5ECE12075F1DD004C6575 /* Build configuration list for PBXNativeTarget "TaipeiParks" */;
+			buildPhases = (
+				9B0A096636B8BA714C31A6BD /* [CP] Check Pods Manifest.lock */,
+				56D5ECC62075F1DC004C6575 /* Sources */,
+				56D5ECC72075F1DC004C6575 /* Frameworks */,
+				56D5ECC82075F1DC004C6575 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaipeiParks;
+			productName = TaipeiParks;
+			productReference = 56D5ECCA2075F1DD004C6575 /* TaipeiParks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56D5ECC22075F1DC004C6575 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = VerntyChang;
+				TargetAttributes = {
+					56D5ECC92075F1DC004C6575 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = C4QUM9F4K5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 56D5ECC52075F1DC004C6575 /* Build configuration list for PBXProject "TaipeiParks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56D5ECC12075F1DC004C6575;
+			productRefGroup = 56D5ECCB2075F1DD004C6575 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56D5ECC92075F1DC004C6575 /* TaipeiParks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56D5ECC82075F1DC004C6575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D5ECDD2075F1DD004C6575 /* LaunchScreen.storyboard in Resources */,
+				56D5ECDA2075F1DD004C6575 /* Assets.xcassets in Resources */,
+				56D5ECD82075F1DD004C6575 /* Main.storyboard in Resources */,
+				564AB626207A15E900274D3A /* taiwan-default.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B0A096636B8BA714C31A6BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaipeiParks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56D5ECC62075F1DC004C6575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D5ECEF20786DD6004C6575 /* TaipeiParkSpotViewController.m in Sources */,
+				56D5ECD52075F1DD004C6575 /* ViewController.m in Sources */,
+				56D5ECD22075F1DD004C6575 /* AppDelegate.m in Sources */,
+				56D5ECCF2075F1DD004C6575 /* main.m in Sources */,
+				56D5ECEA20777C03004C6575 /* TaipeiParkSpots.m in Sources */,
+				56D5ECE6207663AE004C6575 /* SpotTableViewCell.m in Sources */,
+				564AB629207A1B4800274D3A /* OtherSpotCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		56D5ECD62075F1DD004C6575 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56D5ECD72075F1DD004C6575 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56D5ECDB2075F1DD004C6575 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56D5ECDC2075F1DD004C6575 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56D5ECDF2075F1DD004C6575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		56D5ECE02075F1DD004C6575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56D5ECE22075F1DD004C6575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4386C1B05D607B81EC7B75EE /* Pods-TaipeiParks.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C4QUM9F4K5;
+				INFOPLIST_FILE = TaipeiParks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ULSee.FaceARFilter3D-33beta";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56D5ECE32075F1DD004C6575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1572FAECE87B3AB948E953FB /* Pods-TaipeiParks.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C4QUM9F4K5;
+				INFOPLIST_FILE = TaipeiParks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ULSee.FaceARFilter3D-33beta";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56D5ECC52075F1DC004C6575 /* Build configuration list for PBXProject "TaipeiParks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D5ECDF2075F1DD004C6575 /* Debug */,
+				56D5ECE02075F1DD004C6575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D5ECE12075F1DD004C6575 /* Build configuration list for PBXNativeTarget "TaipeiParks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D5ECE22075F1DD004C6575 /* Debug */,
+				56D5ECE32075F1DD004C6575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56D5ECC22075F1DC004C6575 /* Project object */;
+}
