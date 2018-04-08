@@ -11,7 +11,7 @@
 @class Result;
 
 @interface TaipeiParkSpots : NSObject
-@property Result      *result;
+@property (nonatomic, strong) Result *result;
 @end
 
 
@@ -19,13 +19,12 @@
 @property (nonatomic, assign) int offset;
 @property (nonatomic, assign) int limit;
 @property (nonatomic, assign) int count;
-@property NSString     *sort;
-
-@property (nonatomic, strong)   NSArray    *results;
+@property (nonatomic, strong) NSString *sort;
+@property (nonatomic, strong) NSArray *allParkSpots;//results; 
 
 @end
 
-@interface Results : NSObject
+@interface Spot : NSObject
 @property (nonatomic, strong) NSNumber *_id;  //NSSortDescriptor
 @property (nonatomic, strong) NSString *ParkName;
 @property (nonatomic, strong) NSString *Name;

@@ -13,7 +13,7 @@
         <!--Taipei Parks-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TaipeiParkSpotViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="50.399999999999999" y="-80.50974512743629"/>
         </scene>
-        <!--Taipei Park Spot View Controller-->
+        <!--Taipei Park Spot Detail View Controller-->
         <scene sceneID="doT-Lk-U8U">
             <objects>
-                <viewController id="YYX-um-igo" customClass="TaipeiParkSpotViewController" sceneMemberID="viewController">
+                <viewController id="YYX-um-igo" customClass="TaipeiParkSpotDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1RL-7P-EjF"/>
                         <viewControllerLayoutGuide type="bottom" id="A12-gP-Oau"/>
