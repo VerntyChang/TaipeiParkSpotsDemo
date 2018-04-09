@@ -65,7 +65,7 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return self.dataManager.parkCount;
+    return [self.dataManager parkCount];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -90,7 +90,7 @@
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
    
-    Spot* spotDetial = [self.dataManager fetchSpotAtSpotIndex:0 atParkIndex:(int)section];
+    Spot* spotDetial = [self.dataManager fetchSpotAtSpotIndex:0 atParkIndex:(int)section]; 
     return spotDetial.ParkName;
 }
 

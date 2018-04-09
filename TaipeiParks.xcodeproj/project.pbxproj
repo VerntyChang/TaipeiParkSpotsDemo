@@ -10,8 +10,6 @@
 		4CC03BF659A29AFAA92D100B /* libPods-TaipeiParks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4582D031B66A2F7A8E0B1C3F /* libPods-TaipeiParks.a */; };
 		564AB626207A15E900274D3A /* taiwan-default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 564AB625207A15E900274D3A /* taiwan-default.jpg */; };
 		564AB64D207A722200274D3A /* TaipeiParkSpotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AB64C207A722200274D3A /* TaipeiParkSpotDetailViewController.m */; };
-		564AB652207A727200274D3A /* TaipeiParkSpotDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AB64F207A727200274D3A /* TaipeiParkSpotDataManager.m */; };
-		564AB653207A727200274D3A /* AFNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AB651207A727200274D3A /* AFNManager.m */; };
 		564AB658207A72B000274D3A /* OtherSpotCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AB655207A72B000274D3A /* OtherSpotCollectionViewCell.m */; };
 		564AB659207A72B100274D3A /* SpotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AB657207A72B000274D3A /* SpotTableViewCell.m */; };
 		56D5ECCF2075F1DD004C6575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5ECCE2075F1DD004C6575 /* main.m */; };
@@ -21,6 +19,8 @@
 		56D5ECDD2075F1DD004C6575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D5ECDB2075F1DD004C6575 /* LaunchScreen.storyboard */; };
 		56D5ECEA20777C03004C6575 /* TaipeiParkSpots.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5ECE920777C03004C6575 /* TaipeiParkSpots.m */; };
 		56D5ECEF20786DD6004C6575 /* TaipeiParkSpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5ECEE20786DD6004C6575 /* TaipeiParkSpotViewController.m */; };
+		5778173F207B109D0029035A /* TaipeiParkSpotDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778173C207B109D0029035A /* TaipeiParkSpotDataManager.m */; };
+		57781740207B109D0029035A /* AFNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5778173E207B109D0029035A /* AFNManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +30,6 @@
 		564AB625207A15E900274D3A /* taiwan-default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "taiwan-default.jpg"; sourceTree = "<group>"; };
 		564AB64B207A722200274D3A /* TaipeiParkSpotDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaipeiParkSpotDetailViewController.h; sourceTree = "<group>"; };
 		564AB64C207A722200274D3A /* TaipeiParkSpotDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaipeiParkSpotDetailViewController.m; sourceTree = "<group>"; };
-		564AB64E207A727200274D3A /* TaipeiParkSpotDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaipeiParkSpotDataManager.h; path = Model/TaipeiParkSpotDataManager.h; sourceTree = "<group>"; };
-		564AB64F207A727200274D3A /* TaipeiParkSpotDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaipeiParkSpotDataManager.m; path = Model/TaipeiParkSpotDataManager.m; sourceTree = "<group>"; };
-		564AB650207A727200274D3A /* AFNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNManager.h; path = Model/AFNManager.h; sourceTree = "<group>"; };
-		564AB651207A727200274D3A /* AFNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNManager.m; path = Model/AFNManager.m; sourceTree = "<group>"; };
 		564AB654207A72B000274D3A /* OtherSpotCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtherSpotCollectionViewCell.h; path = Model/OtherSpotCollectionViewCell.h; sourceTree = "<group>"; };
 		564AB655207A72B000274D3A /* OtherSpotCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherSpotCollectionViewCell.m; path = Model/OtherSpotCollectionViewCell.m; sourceTree = "<group>"; };
 		564AB656207A72B000274D3A /* SpotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpotTableViewCell.h; path = Model/SpotTableViewCell.h; sourceTree = "<group>"; };
@@ -50,6 +46,10 @@
 		56D5ECE920777C03004C6575 /* TaipeiParkSpots.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaipeiParkSpots.m; path = Model/TaipeiParkSpots.m; sourceTree = "<group>"; };
 		56D5ECED20786DC5004C6575 /* TaipeiParkSpotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaipeiParkSpotViewController.h; sourceTree = "<group>"; };
 		56D5ECEE20786DD6004C6575 /* TaipeiParkSpotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaipeiParkSpotViewController.m; sourceTree = "<group>"; };
+		5778173B207B109D0029035A /* TaipeiParkSpotDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaipeiParkSpotDataManager.h; path = Manager/TaipeiParkSpotDataManager.h; sourceTree = "<group>"; };
+		5778173C207B109D0029035A /* TaipeiParkSpotDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaipeiParkSpotDataManager.m; path = Manager/TaipeiParkSpotDataManager.m; sourceTree = "<group>"; };
+		5778173D207B109D0029035A /* AFNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNManager.h; path = Manager/AFNManager.h; sourceTree = "<group>"; };
+		5778173E207B109D0029035A /* AFNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNManager.m; path = Manager/AFNManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,11 +85,11 @@
 		56D5ECCC2075F1DD004C6575 /* TaipeiParks */ = {
 			isa = PBXGroup;
 			children = (
+				5778173A207B10480029035A /* Manager */,
 				56D5ECED20786DC5004C6575 /* TaipeiParkSpotViewController.h */,
 				56D5ECEE20786DD6004C6575 /* TaipeiParkSpotViewController.m */,
 				564AB64B207A722200274D3A /* TaipeiParkSpotDetailViewController.h */,
 				564AB64C207A722200274D3A /* TaipeiParkSpotDetailViewController.m */,
-				564AB625207A15E900274D3A /* taiwan-default.jpg */,
 				56D5ECE720777863004C6575 /* Model */,
 				56D5ECD02075F1DD004C6575 /* AppDelegate.h */,
 				56D5ECD12075F1DD004C6575 /* AppDelegate.m */,
@@ -113,18 +113,26 @@
 		56D5ECE720777863004C6575 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				564AB625207A15E900274D3A /* taiwan-default.jpg */,
 				564AB654207A72B000274D3A /* OtherSpotCollectionViewCell.h */,
 				564AB655207A72B000274D3A /* OtherSpotCollectionViewCell.m */,
 				564AB656207A72B000274D3A /* SpotTableViewCell.h */,
 				564AB657207A72B000274D3A /* SpotTableViewCell.m */,
-				564AB650207A727200274D3A /* AFNManager.h */,
-				564AB651207A727200274D3A /* AFNManager.m */,
-				564AB64E207A727200274D3A /* TaipeiParkSpotDataManager.h */,
-				564AB64F207A727200274D3A /* TaipeiParkSpotDataManager.m */,
 				56D5ECE820777BF2004C6575 /* TaipeiParkSpots.h */,
 				56D5ECE920777C03004C6575 /* TaipeiParkSpots.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		5778173A207B10480029035A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5778173D207B109D0029035A /* AFNManager.h */,
+				5778173E207B109D0029035A /* AFNManager.m */,
+				5778173B207B109D0029035A /* TaipeiParkSpotDataManager.h */,
+				5778173C207B109D0029035A /* TaipeiParkSpotDataManager.m */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 		A6697A20DB103ABD356E3F55 /* Frameworks */ = {
@@ -176,6 +184,7 @@
 				TargetAttributes = {
 					56D5ECC92075F1DC004C6575 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = C4QUM9F4K5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -238,13 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57781740207B109D0029035A /* AFNManager.m in Sources */,
 				56D5ECEF20786DD6004C6575 /* TaipeiParkSpotViewController.m in Sources */,
 				564AB64D207A722200274D3A /* TaipeiParkSpotDetailViewController.m in Sources */,
 				56D5ECD22075F1DD004C6575 /* AppDelegate.m in Sources */,
-				564AB653207A727200274D3A /* AFNManager.m in Sources */,
+				5778173F207B109D0029035A /* TaipeiParkSpotDataManager.m in Sources */,
 				56D5ECCF2075F1DD004C6575 /* main.m in Sources */,
 				56D5ECEA20777C03004C6575 /* TaipeiParkSpots.m in Sources */,
-				564AB652207A727200274D3A /* TaipeiParkSpotDataManager.m in Sources */,
 				564AB659207A72B100274D3A /* SpotTableViewCell.m in Sources */,
 				564AB658207A72B000274D3A /* OtherSpotCollectionViewCell.m in Sources */,
 			);
@@ -381,7 +390,7 @@
 			baseConfigurationReference = 4386C1B05D607B81EC7B75EE /* Pods-TaipeiParks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C4QUM9F4K5;
 				INFOPLIST_FILE = TaipeiParks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -395,7 +404,7 @@
 			baseConfigurationReference = 1572FAECE87B3AB948E953FB /* Pods-TaipeiParks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C4QUM9F4K5;
 				INFOPLIST_FILE = TaipeiParks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

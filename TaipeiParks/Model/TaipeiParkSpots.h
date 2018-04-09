@@ -20,11 +20,11 @@
 @property (nonatomic, assign) int limit;
 @property (nonatomic, assign) int count;
 @property (nonatomic, strong) NSString *sort;
-@property (nonatomic, strong) NSArray *allParkSpots;//results; 
+@property (nonatomic, strong) NSArray *allParkSpots; //results;
 
 @end
 
-@interface Spot : NSObject
+@interface Spot : NSObject <NSCopying>
 @property (nonatomic, strong) NSNumber *_id;  //NSSortDescriptor
 @property (nonatomic, strong) NSString *ParkName;
 @property (nonatomic, strong) NSString *Name;

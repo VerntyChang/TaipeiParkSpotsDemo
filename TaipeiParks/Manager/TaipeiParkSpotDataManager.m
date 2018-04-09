@@ -34,7 +34,7 @@
     return self;
 }
 
--(int)parkCount{
+-(int) parkCount{
     return (int)[self.spotgroupOfDifferentPark count];
 }
 
@@ -51,8 +51,8 @@
     
     self.spotsInSamePark = [self.spotgroupOfDifferentPark objectAtIndex:parkIndex];
     self.spot = [self.spotsInSamePark objectAtIndex:spotIndex];
-    return self.spot;
-  
+    
+    return [self.spot copy];
 }
 
 #pragma mark - parser
