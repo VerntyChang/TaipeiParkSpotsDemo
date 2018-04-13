@@ -30,13 +30,8 @@
     self = [super init];
     if (self) {
         _manager = [AFHTTPSessionManager manager];
-        _manager.operationQueue.maxConcurrentOperationCount = 5;
-        _manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-        _manager.requestSerializer.timeoutInterval = 30.0f;
-        [_manager.requestSerializer setValue:@"gzip" forHTTPHeaderField:@"Content-Encoding"];
-        _manager.responseSerializer.acceptableContentTypes = [[NSSet alloc] initWithObjects:@"application/xml", @"text/xml",@"text/html", @"application/json",@"text/plain",nil];
+        _manager.operationQueue.maxConcurrentOperationCount = 1;
         _manager.responseSerializer = [AFJSONResponseSerializer serializer];
-        _manager.responseSerializer.acceptableContentTypes=[[NSSet alloc] initWithObjects:@"application/xml", @"text/xml",@"text/html", @"application/json",@"text/plain",nil];
     }
     return self;
 }
