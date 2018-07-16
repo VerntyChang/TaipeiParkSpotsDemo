@@ -8,105 +8,108 @@
 
 #import "TaipeiParkSpotViewController.h"
 #import "SpotTableViewCell.h"
-
-#import "UIImageView+WebCache.h"
-
-#import "AFNManager.h"
-#import "TaipeiParkSpotDataManager.h"
-#import "TaipeiParkSpots.h"
+ 
+static NSString *const spotTableViewCellIdentifier = @"SpotCell";
 
 @interface TaipeiParkSpotViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic,strong) AFNManager *afnManager;
-@property (strong, nonatomic) TaipeiParkSpotDataManager *dataManager;
 @end
 
 @implementation TaipeiParkSpotViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+//    setupUI()
+//    layoutUI()
+//    styleUI()
+//    updateUI()
     
+    [self layoutUI];
+//   [self updateUI];
+    [self.viewModel fetchData];
+}
+
+- (void)setupUI{
+//    tableView.delegate = self
+//    tableView.dataSource = self
+//    tableView.register(GroupTableViewCell.self, forCellReuseIdentifier: GroupTableViewCell.cellIdentifier)
+//
+//    view.addSubview(tableView)
+//
+//    title = viewModel.groupsCategory
+}
+
+- (void)layoutUI{
     self.tableView.estimatedRowHeight = 160;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    
-    [self.afnManager getAllParkSpotsData];
-
 }
-
-#pragma mark - getter
--(AFNManager *)afnManager{
+- (void)styleUI{
     
-     if(_afnManager == nil){
-      
-         _afnManager = [AFNManager sharedInstance];
-         
-         __weak typeof(self) weakSelf = self;
-         _afnManager.connectionSuccessBlock = ^(id responseObject){
-             
-             [weakSelf.dataManager parseJSON:responseObject];
-             [weakSelf.tableView reloadData];
-         };
-     }
-    
-    return _afnManager;
 }
-
--(TaipeiParkSpotDataManager *)dataManager{
+- (void)updateUI{
+    dispatch_async(dispatch_get_main_queue(), ^{
+ 
+        [self.tableView reloadData];
+    });
     
-    if(_dataManager == nil){
-        _dataManager = [[TaipeiParkSpotDataManager alloc] init];
-    }
-    
-    return _dataManager;
 }
-
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [self.viewModel numberOfSection];
     
-    return [self.dataManager parkCount];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return [self.dataManager spotCountAtParkIndex:(int)section];
+    return [self.viewModel numberOfCellsForIndexAt:(int)section];
+   
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    SpotTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SpotCell" forIndexPath:indexPath];
+    SpotTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:spotTableViewCellIdentifier forIndexPath:indexPath];
     
-     Spot* spotDetial = [self.dataManager fetchSpotAtSpotIndex:(int)indexPath.row atParkIndex:(int)indexPath.section];
-    
-    cell.spotName.text = spotDetial.Name;
-    cell.parkName.text = spotDetial.ParkName;
-    cell.spotIntroduction.text = spotDetial.Introduction;
-    
-    [cell.spotImage sd_setImageWithPreviousCachedImageWithURL:[NSURL URLWithString: spotDetial.Image ] placeholderImage:[UIImage imageNamed:@"taiwan-default.jpg"] options:SDWebImageCacheMemoryOnly progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {    } ];
+    [cell configure: [self.viewModel getCellViewModelForRowAt:indexPath.row index:indexPath.section]];
+
     
     return cell;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-   
-    Spot* spotDetial = [self.dataManager fetchSpotAtSpotIndex:0 atParkIndex:(int)section]; 
-    return spotDetial.ParkName;
+    
+    SpotTableCellViewModel *vm= [self.viewModel getCellViewModelForRowAt:0 index:section];
+    return vm.parkName;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    NSString *className = self.classNames[indexPath.row];
+//    Class class = NSClassFromString(className);
+//    if (class) {
+//        UIViewController *ctrl = class.new;
+//        ctrl.title = _titles[indexPath.row];
+//        [self.navigationController pushViewController:ctrl animated:YES];
+//    }
+    
+    [self.viewModel showDetailForRowAt:indexPath.row index:indexPath.section];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+ 
+}
 
 #pragma mark - storyboard
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-     
-    id taipeiParkSpotDetailViewController = segue.destinationViewController;
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+     //!!!!!!!  still in  and create a new navi  so mark this
+//DELETE UIStoryboardSegue!
+    //id taipeiParkSpotDetailViewController = segue.destinationViewController;
  
-    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+//    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+//    
+//    [taipeiParkSpotDetailViewController setValue:@(indexPath.section) forKey:@"parkIndex"];
+//    [taipeiParkSpotDetailViewController setValue:@(indexPath.row) forKey:@"spotIndex"];
+//    [taipeiParkSpotDetailViewController setValue:self.dataManager forKey:@"dataManager"];
     
-    [taipeiParkSpotDetailViewController setValue:@(indexPath.section) forKey:@"parkIndex"];
-    [taipeiParkSpotDetailViewController setValue:@(indexPath.row) forKey:@"spotIndex"];
-    [taipeiParkSpotDetailViewController setValue:self.dataManager forKey:@"dataManager"];
-    
-}
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

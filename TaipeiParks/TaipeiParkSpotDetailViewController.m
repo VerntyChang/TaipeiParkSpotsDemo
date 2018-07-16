@@ -7,9 +7,12 @@
 //
 
 #import "TaipeiParkSpotDetailViewController.h"
-#import "TaipeiParkSpots.h"
-#import "UIImageView+WebCache.h"
 #import "OtherSpotCollectionViewCell.h"
+
+#import "UIImageView+WebCache.h"
+#import "SpotTableCellViewModel.h"
+
+static NSString *const spotCollectionViewCellIdentifier = @"OtherSpotCell";
 
 @interface TaipeiParkSpotDetailViewController()
 @property (strong, nonatomic) IBOutlet UILabel *parkName;
@@ -27,27 +30,61 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    Spot* spotDetial = [self.dataManager fetchSpotAtSpotIndex:self.spotIndex atParkIndex:self.parkIndex];
-    
-    self.parkName.text = spotDetial.ParkName;
-    self.spotName.text =  spotDetial.Name;
-    self.openTime.text =  spotDetial.OpenTime;
-    self.introduction.text = spotDetial.Introduction;
      
-    [self.imageView sd_setImageWithPreviousCachedImageWithURL:[NSURL URLWithString: spotDetial.Image] placeholderImage:[UIImage imageNamed:@"taiwan-default.jpg"] options:SDWebImageCacheMemoryOnly progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {  } ];
+    //    setupUI()
+    //    layoutUI()
+    //    styleUI()
+    //    updateUI()
     
-    [self.otherSpotsCollectionView reloadData];
+    [self setupUI];
+    //   [self updateUI];
+    [self.viewModel fetchOtherSpotData];
+
 }
 
+
+- (void)setupUI{
+    
+    //setupNavi
+    self.navigationItem.title = (@"Main Spot");
+    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"Back"
+                                   style:UIBarButtonItemStylePlain
+                                   target:self.viewModel
+                                   action:@selector(backToPreviousPage)];
+    self.navigationItem.leftBarButtonItem = backButton;
+ 
+    //
+    SpotTableCellViewModel *vm = [self.viewModel fetchMainSpot];
+    self.parkName.text = vm.parkName;
+    self.spotName.text =  vm.spotName;
+    self.openTime.text =  vm.spotOpenTime;
+    self.introduction.text = vm.spotIntroduction;
+    [self.imageView sd_setImageWithPreviousCachedImageWithURL:[NSURL URLWithString: vm.spotImage] placeholderImage:[UIImage imageNamed:@"taiwan-default.jpg"] options:SDWebImageCacheMemoryOnly progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {  } ];
+}
+
+- (void)layoutUI{
+    
+}
+- (void)styleUI{
+    
+}
+- (void)updateUI{
+    dispatch_async(dispatch_get_main_queue(), ^{
+ 
+        [self.otherSpotsCollectionView reloadData];
+        
+    });
+    
+}
+ 
 #pragma mark - UICollectionViewDataSource
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    int otherSpotsCount = (int)[self.dataManager spotCountAtParkIndex:self.parkIndex] -1;
-    if(otherSpotsCount == 0) self.otherSpotsLabel.hidden = true;
-    
-    return otherSpotsCount;
+ 
+    return [self.viewModel numberOfCollectionCells];
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -57,15 +94,11 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-   OtherSpotCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"OtherSpotCell" forIndexPath:indexPath];
+   OtherSpotCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: spotCollectionViewCellIdentifier  forIndexPath:indexPath];
     
-    int shiftedSpotIndex = (indexPath.row >= self.spotIndex) ? ((int)indexPath.row+1):(int)indexPath.row;
     
-    Spot* spotDetial = [self.dataManager fetchSpotAtSpotIndex:shiftedSpotIndex atParkIndex:self.parkIndex] ;
-    
-    cell.otherSpotName.text = spotDetial.Name;
-    [cell.otherSpotImage sd_setImageWithPreviousCachedImageWithURL:[NSURL URLWithString:spotDetial.Image] placeholderImage:[UIImage imageNamed:@"taiwan-default.jpg"] options:SDWebImageCacheMemoryOnly progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) { } ];
+      [cell configure: [self.viewModel getCellViewModelForRowAt:indexPath.row index:indexPath.section]];
+     
     
     return cell;
 }

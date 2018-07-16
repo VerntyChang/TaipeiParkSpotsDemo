@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
- 
-@interface TaipeiParkSpotViewController : UIViewController
+#import "TaipeiParkSpotViewModel.h"
 
+@interface TaipeiParkSpotViewController : UIViewController
+@property (nonatomic, strong) TaipeiParkSpotViewModel *viewModel;
+- (void)updateUI;
 @end
 

@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class SpotTableCellViewModel;
 @interface OtherSpotCollectionViewCell : UICollectionViewCell
 
 @property (strong, nonatomic) IBOutlet UIImageView *otherSpotImage;
 @property (strong, nonatomic) IBOutlet UILabel *otherSpotName;
 
+- (void)configure:(SpotTableCellViewModel *)viewModel;
 @end

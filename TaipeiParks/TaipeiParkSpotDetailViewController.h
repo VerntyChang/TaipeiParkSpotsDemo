@@ -7,12 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TaipeiParkSpotDataManager.h"
+//#import "TaipeiParkSpotDataManager.h"
+#import "TaipeiParkSpotDetailViewModel.h"
 
 @interface TaipeiParkSpotDetailViewController : UIViewController
 
-@property (nonatomic,assign) int parkIndex;
-@property (nonatomic,assign) int spotIndex;
-@property (strong, nonatomic) TaipeiParkSpotDataManager* dataManager;
+//@property (nonatomic,assign) int parkIndex;
+//@property (nonatomic,assign) int spotIndex;
+//@property (strong, nonatomic) TaipeiParkSpotDataManager* dataManager;
+
+
+@property (nonatomic, strong) TaipeiParkSpotDetailViewModel *viewModel;
+- (void)updateUI;
 
 @end

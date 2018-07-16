@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oVU-iS-aVV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--Taipei Parks-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TaipeiParkSpotViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TaipeiParkSpotViewController" id="BYZ-38-t0r" customClass="TaipeiParkSpotViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -34,10 +34,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kqc-nQ-X1o">
-                                                    <rect key="frame" x="30" y="26" width="283" height="179"/>
+                                                    <rect key="frame" x="30" y="26" width="315" height="179"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LqA-wa-VPJ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="283" height="148.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="315" height="148.5"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="16z-9x-wjP">
                                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -52,7 +52,7 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5G7-Ec-Ek7">
-                                                                    <rect key="frame" x="75" y="0.0" width="208" height="46"/>
+                                                                    <rect key="frame" x="75" y="0.0" width="240" height="46"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Park Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUL-lH-1QA">
                                                                             <rect key="frame" x="0.0" y="0.0" width="61.5" height="14.5"/>
@@ -96,7 +96,6 @@
                                             <outlet property="spotImage" destination="16z-9x-wjP" id="e70-XI-5DD"/>
                                             <outlet property="spotIntroduction" destination="9fc-hQ-yPN" id="dDf-mK-xWs"/>
                                             <outlet property="spotName" destination="Mk7-g7-zgc" id="xog-Ns-Bah"/>
-                                            <segue destination="YYX-um-igo" kind="show" identifier="showSpotDetail" id="js5-9h-ccg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -126,7 +125,7 @@
         <!--Taipei Park Spot Detail View Controller-->
         <scene sceneID="doT-Lk-U8U">
             <objects>
-                <viewController id="YYX-um-igo" customClass="TaipeiParkSpotDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TaipeiParkSpotDetailViewController" id="YYX-um-igo" customClass="TaipeiParkSpotDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1RL-7P-EjF"/>
                         <viewControllerLayoutGuide type="bottom" id="A12-gP-Oau"/>
@@ -136,7 +135,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0w-hb-Opm">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9j-kd-BxI">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="631.5"/>

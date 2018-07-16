@@ -12,6 +12,13 @@
 		564AB64D207A722200274D3A /* TaipeiParkSpotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AB64C207A722200274D3A /* TaipeiParkSpotDetailViewController.m */; };
 		564AB658207A72B000274D3A /* OtherSpotCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AB655207A72B000274D3A /* OtherSpotCollectionViewCell.m */; };
 		564AB659207A72B100274D3A /* SpotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 564AB657207A72B000274D3A /* SpotTableViewCell.m */; };
+		56D5E57920F6070600A84563 /* AppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5E57820F6070600A84563 /* AppCoordinator.m */; };
+		56D5E57D20F60FF800A84563 /* TaipeiParkSpotViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5E57C20F60FF800A84563 /* TaipeiParkSpotViewModel.m */; };
+		56D5E57F20F6115900A84563 /* TaipeiParkSpotCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5E57E20F6115900A84563 /* TaipeiParkSpotCoordinator.m */; };
+		56D5E58320F6123300A84563 /* TaipeiParkSpotInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5E58220F6123300A84563 /* TaipeiParkSpotInteractor.m */; };
+		56D5E58520F621DC00A84563 /* SpotTableCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5E58420F621DC00A84563 /* SpotTableCellViewModel.m */; };
+		56D5E58920F64EF500A84563 /* TaipeiParkSpotDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5E58820F64EF500A84563 /* TaipeiParkSpotDetailViewModel.m */; };
+		56D5E58F20F651E700A84563 /* TaipeiParkSpotDetailCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5E58E20F651E700A84563 /* TaipeiParkSpotDetailCoordinator.m */; };
 		56D5ECCF2075F1DD004C6575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5ECCE2075F1DD004C6575 /* main.m */; };
 		56D5ECD22075F1DD004C6575 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D5ECD12075F1DD004C6575 /* AppDelegate.m */; };
 		56D5ECD82075F1DD004C6575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D5ECD62075F1DD004C6575 /* Main.storyboard */; };
@@ -34,6 +41,20 @@
 		564AB655207A72B000274D3A /* OtherSpotCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherSpotCollectionViewCell.m; path = Model/OtherSpotCollectionViewCell.m; sourceTree = "<group>"; };
 		564AB656207A72B000274D3A /* SpotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpotTableViewCell.h; path = Model/SpotTableViewCell.h; sourceTree = "<group>"; };
 		564AB657207A72B000274D3A /* SpotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpotTableViewCell.m; path = Model/SpotTableViewCell.m; sourceTree = "<group>"; };
+		56D5E57820F6070600A84563 /* AppCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCoordinator.m; sourceTree = "<group>"; };
+		56D5E57A20F6072900A84563 /* AppCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCoordinator.h; sourceTree = "<group>"; };
+		56D5E57B20F60FEE00A84563 /* TaipeiParkSpotViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaipeiParkSpotViewModel.h; sourceTree = "<group>"; };
+		56D5E57C20F60FF800A84563 /* TaipeiParkSpotViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaipeiParkSpotViewModel.m; sourceTree = "<group>"; };
+		56D5E57E20F6115900A84563 /* TaipeiParkSpotCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaipeiParkSpotCoordinator.m; sourceTree = "<group>"; };
+		56D5E58020F6116500A84563 /* TaipeiParkSpotCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaipeiParkSpotCoordinator.h; sourceTree = "<group>"; };
+		56D5E58120F6122700A84563 /* TaipeiParkSpotInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaipeiParkSpotInteractor.h; sourceTree = "<group>"; };
+		56D5E58220F6123300A84563 /* TaipeiParkSpotInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaipeiParkSpotInteractor.m; sourceTree = "<group>"; };
+		56D5E58420F621DC00A84563 /* SpotTableCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotTableCellViewModel.m; sourceTree = "<group>"; };
+		56D5E58620F621E800A84563 /* SpotTableCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotTableCellViewModel.h; sourceTree = "<group>"; };
+		56D5E58720F64EE800A84563 /* TaipeiParkSpotDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaipeiParkSpotDetailViewModel.h; sourceTree = "<group>"; };
+		56D5E58820F64EF500A84563 /* TaipeiParkSpotDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaipeiParkSpotDetailViewModel.m; sourceTree = "<group>"; };
+		56D5E58D20F651DC00A84563 /* TaipeiParkSpotDetailCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaipeiParkSpotDetailCoordinator.h; sourceTree = "<group>"; };
+		56D5E58E20F651E700A84563 /* TaipeiParkSpotDetailCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaipeiParkSpotDetailCoordinator.m; sourceTree = "<group>"; };
 		56D5ECCA2075F1DD004C6575 /* TaipeiParks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaipeiParks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D5ECCE2075F1DD004C6575 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56D5ECD02075F1DD004C6575 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +119,20 @@
 				56D5ECDB2075F1DD004C6575 /* LaunchScreen.storyboard */,
 				56D5ECDE2075F1DD004C6575 /* Info.plist */,
 				56D5ECCD2075F1DD004C6575 /* Supporting Files */,
+				56D5E57820F6070600A84563 /* AppCoordinator.m */,
+				56D5E57A20F6072900A84563 /* AppCoordinator.h */,
+				56D5E57B20F60FEE00A84563 /* TaipeiParkSpotViewModel.h */,
+				56D5E57C20F60FF800A84563 /* TaipeiParkSpotViewModel.m */,
+				56D5E57E20F6115900A84563 /* TaipeiParkSpotCoordinator.m */,
+				56D5E58020F6116500A84563 /* TaipeiParkSpotCoordinator.h */,
+				56D5E58120F6122700A84563 /* TaipeiParkSpotInteractor.h */,
+				56D5E58220F6123300A84563 /* TaipeiParkSpotInteractor.m */,
+				56D5E58420F621DC00A84563 /* SpotTableCellViewModel.m */,
+				56D5E58620F621E800A84563 /* SpotTableCellViewModel.h */,
+				56D5E58720F64EE800A84563 /* TaipeiParkSpotDetailViewModel.h */,
+				56D5E58820F64EF500A84563 /* TaipeiParkSpotDetailViewModel.m */,
+				56D5E58D20F651DC00A84563 /* TaipeiParkSpotDetailCoordinator.h */,
+				56D5E58E20F651E700A84563 /* TaipeiParkSpotDetailCoordinator.m */,
 			);
 			path = TaipeiParks;
 			sourceTree = "<group>";
@@ -248,14 +283,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				57781740207B109D0029035A /* AFNManager.m in Sources */,
+				56D5E58520F621DC00A84563 /* SpotTableCellViewModel.m in Sources */,
 				56D5ECEF20786DD6004C6575 /* TaipeiParkSpotViewController.m in Sources */,
+				56D5E57F20F6115900A84563 /* TaipeiParkSpotCoordinator.m in Sources */,
+				56D5E57920F6070600A84563 /* AppCoordinator.m in Sources */,
 				564AB64D207A722200274D3A /* TaipeiParkSpotDetailViewController.m in Sources */,
 				56D5ECD22075F1DD004C6575 /* AppDelegate.m in Sources */,
 				5778173F207B109D0029035A /* TaipeiParkSpotDataManager.m in Sources */,
 				56D5ECCF2075F1DD004C6575 /* main.m in Sources */,
+				56D5E58F20F651E700A84563 /* TaipeiParkSpotDetailCoordinator.m in Sources */,
 				56D5ECEA20777C03004C6575 /* TaipeiParkSpots.m in Sources */,
+				56D5E58920F64EF500A84563 /* TaipeiParkSpotDetailViewModel.m in Sources */,
 				564AB659207A72B100274D3A /* SpotTableViewCell.m in Sources */,
+				56D5E57D20F60FF800A84563 /* TaipeiParkSpotViewModel.m in Sources */,
 				564AB658207A72B000274D3A /* OtherSpotCollectionViewCell.m in Sources */,
+				56D5E58320F6123300A84563 /* TaipeiParkSpotInteractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
